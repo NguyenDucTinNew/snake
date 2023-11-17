@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.CrudController">
+   <children>
+      <Label alignment="CENTER" layoutX="155.0" layoutY="14.0" prefHeight="40.0" prefWidth="243.0" text="CRUD FROM">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <Label fx:id="tfID" layoutX="84.0" layoutY="92.0" text="ID" />
+      <Label fx:id="tfEmail" layoutX="84.0" layoutY="197.0" text="Email" />
+      <Label fx:id="tfPass" layoutX="84.0" layoutY="241.0" text="Pass" />
+      <Label fx:id="tfUser" layoutX="84.0" layoutY="140.0" text="User" />
+      <Label fx:id="tfRepass" layoutX="84.0" layoutY="291.0" text="RePass" />
+      <Button layoutX="359.0" layoutY="88.0" mnemonicParsing="false" onAction="#btnFindActionePerformed" text="Find" />
+      <Button layoutX="193.0" layoutY="326.0" mnemonicParsing="false" onAction="#btnInsertActionePerformed" text="Insert" />
+      <Button layoutX="399.0" layoutY="326.0" mnemonicParsing="false" onAction="#btnDeleteActionePerformed" text="Detele" />
+      <Button layoutX="441.0" layoutY="88.0" mnemonicParsing="false" onAction="#btnClearActionePerformed" text="Clear" />
+      <Button layoutX="291.0" layoutY="326.0" mnemonicParsing="false" onAction="#btnUpdateActionePerformed" text="Update" />
+      <TextField layoutX="150.0" layoutY="88.0" />
+      <TextField layoutX="150.0" layoutY="136.0" prefHeight="26.0" prefWidth="217.0" />
+      <TextField layoutX="150.0" layoutY="193.0" prefHeight="26.0" prefWidth="218.0" />
+      <TextField layoutX="150.0" layoutY="237.0" prefHeight="26.0" prefWidth="218.0" />
+      <TextField layoutX="150.0" layoutY="287.0" prefHeight="26.0" prefWidth="218.0" />
+   </children>
+</AnchorPane>

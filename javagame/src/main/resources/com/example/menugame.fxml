@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.menugamecontroller">
+   <children>
+      <ImageView fx:id="grassbackgound" fitHeight="480.0" fitWidth="640.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../../../../../Users/nguye/OneDrive/Máy%20tính/grassbackground.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="239.0" layoutY="200.0" mnemonicParsing="false" onAction="#btn1player" prefHeight="26.0" prefWidth="117.0" text="1 player" textAlignment="CENTER">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font>
+         <effect>
+            <Lighting bumpInput="$null">
+               <light>
+                  <Light.Distant>
+                     <color>
+                        <Color red="0.9333333373069763" green="0.9882352948188782" blue="0.1411764770746231" />
+                     </color>
+                  </Light.Distant>
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <Button layoutX="239.0" layoutY="245.0" mnemonicParsing="false" onAction="#btn2player" prefHeight="26.0" prefWidth="118.0" text="2 player">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow radius="68.5" width="255.0" />
+               </bumpInput>
+               <light>
+                  <Light.Distant>
+                     <color>
+                        <Color red="0.9333333373069763" green="0.9882352948188782" blue="0.1411764770746231" />
+                     </color>
+                  </Light.Distant>
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <ImageView fx:id="logogame" fitHeight="157.0" fitWidth="375.0" layoutX="112.0" layoutY="104.0" opacity="0.86" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../Users/nguye/Downloads/Untitled%20(2).png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
